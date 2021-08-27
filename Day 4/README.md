@@ -14,18 +14,23 @@ Paquetes:
 1. Instalar la última versión de pip desde Anaconda o una terminal
 `py -m pip install --upgrade pip`
 2. Crear una estructura de carpetas similar a esta, donde "example_package" será el nombre de nuestro paquete.
+
+```
 tutorial_paquete/
 └── src/
     └── example_package/
         ├── __init__.py
         └── example.py
+```
+
 `__init__.py` es necesario para importar el paquete y deberá estar vacío. 
 `example_.py` es donde viven nuestras funciones de nuestro paquete.
-3. Agregar sus funciones, clases, lógica a `example.py`. Para este ejemplo lo mantendremos simple. Dentro de `example.py` agregue sus funciones. Si aún no tiene funciones aquí hay un ejemplo
+3. Agregar sus funciones, clases, lógica a `example.py`. Para este ejemplo lo mantendremos simple. Dentro de `example.py` agregue sus funciones. Si aún no tiene funciones aquí hay un ejemplo:
 ```
 def add_one(number):
     return number + 1
 ```
+
 4. Crear un archivo `LICENSE` para la licencia y agregar el siguiente texto
 ```
 Copyright (c) 2018 The Python Packaging Authority
@@ -52,6 +57,7 @@ SOFTWARE.
 6. Crear un `README.md`
 7. Crear un `setup.cfg`
 8. Crear una carpeta `tests/` vacía. Su estructura se verá así
+```
 packaging_tutorial/
 ├── LICENSE
 ├── pyproject.toml
@@ -62,6 +68,7 @@ packaging_tutorial/
 │       ├── __init__.py
 │       └── example.py
 └── tests/
+```
 
 9. Dentro de `pyproject.toml` agregar lo siguiente
 ```
